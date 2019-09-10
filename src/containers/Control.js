@@ -36,7 +36,7 @@ const Control = () => {
     useEffect(() => {
         const converter = async () => {
             let result = convert(inputFrom, { from: from, to: to, base: base, rates });
-            setResult(result);
+            setResult(Number(result).toFixed(2));
         }
 
         converter()

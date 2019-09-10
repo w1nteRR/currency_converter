@@ -7,6 +7,7 @@
     "axios": "^0.19.0",
     "cashify": "^1.2.1",
     "chart.js": "^2.8.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-chartjs-2": "^2.7.6",
@@ -16,7 +17,10 @@
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0"
   },
+  "homepage": "https://w1nteRR.github.io/currency_converter",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
