@@ -3,8 +3,10 @@ import { Line } from 'react-chartjs-2';
 
 const Chart = ({ to, history }) => {
 
-    const labels = Object.keys(history);
+    const labels = Object.keys(history).sort();
     const values = Object.values(history).map(o => Object.values(o));
+
+    console.log()
     
     const [line, setLine] = useState({
         labels: [],
